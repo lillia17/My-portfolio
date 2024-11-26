@@ -1,0 +1,175 @@
+
+body {
+    font-family: 'Cinzel', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header.hero {
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.headline {
+    font-size: 7em;
+    font-family: 'Alex Brush', cursive;
+      color: #fff;
+}
+
+.tagline {
+    font-size: 1.5em;
+    font-family: 'Cinzel', sans-serif;
+    color: #D7B8A3;
+}
+
+nav.navbar {
+    background-color: #648827;
+    padding: 0.8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+ #about p {
+color: #648827 ; 
+font-family: Consolas; 
+line-height: 1.8; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Cinzel', sans-serif;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 4em;
+    text-align: center;
+    color: #648827;/* mga projects, skills, about me titles */
+    
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.skills-list li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 1.2em;
+    font-family: 'Cinzel', sans-serif;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #648827;
+    color: white;
+    border-radius: 5px;
+}
+
+.skills-list li:hover {
+    background-color: #d9e6c3;
+
+}
+
+.skill-details {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #648827;
+    font-family: Arial;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 19px;
+}
+
+.skill-details img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.skill-details p {
+color:#fff
+}
+
+.footer {
+    background-image: url('bg.png');
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+
+}
+.footer p {
+color: #fff; /* Paragraph text color */
+
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 300px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #648827;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #d9e6c3 ;
+}
+
+.project-image {
+    width: 500%; 
+    max-width: 1000px; 
+    height: auto;
+    display: block; 
+    margin: 100px auto; 
+    border: 2px solid #648827; 
+    border-radius: 10px; 
+}
+

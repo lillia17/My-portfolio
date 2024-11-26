@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Portfolio-2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel&family=Cormorant+Garamond&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <h1 class="headline">Welcome to My Portfolio</h1>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div class="container">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-me-container">
+          <p>
+            I'm Chelsey Roldan, a content creator, video editor, and graphic
+            designer passionate about digital entrepreneurship. I manage two
+            YouTube channels—one personal and faceless, and another
+            collaborative—both showcasing my creative journey.
+          </p>
+          <p>
+            In February 2024, I launched two Instagram accounts to promote my
+            digital products and actively market on TikTok with engaging
+            promotional videos. I also run multiple "raket" accounts offering
+            digital products and freelance creative services. My work reflects a
+            commitment to creativity, visual storytelling, and marketing
+            excellence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+          <h2>Projects</h2>
+          <img src="7.png" alt="HTML & CSS" class="project-image" />
+          <img src="8.png" alt="HTML & CSS" class="project-image" />
+          <img src="9.png" alt="HTML & CSS" class="project-image" />
+          <img src="10.png" alt="HTML & CSS" class="project-image" />
+          <img src="11.png" alt="HTML & CSS" class="project-image" />
+          
+      </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li onclick="toggleSkill('html')">Content Creation & Video Editing</li>
+            <li onclick="toggleSkill('js')">Instagram & Graphic Design for Digital Business</li>
+            <li onclick="toggleSkill('design')">Tiktok Marketing & Video Production</li>
+            <li onclick="toggleSkill('video')">Freelance Sales & Creative Services</li>
+        </ul>
+
+        <!-- Skill Details -->
+        <div id="html" class="skill-details">
+            <img src="images/html-css.jpg" alt="">
+            <p>
+              - Managed and edited content for two YouTube channels (personal
+              faceless and collaborative)
+            </p>
+            <p>
+              - Expertise in video editing for vlogs and creative storytelling
+            </p>
+            <p>- Software/tools used (e.g., Capcut, Final Cut Pro)</p>
+        </div>
+
+        <div id="js" class="skill-details">
+            <img src="images/javascript.jpg" alt="">
+            <p>
+              - Created and managed two Instagram accounts for digital business
+            </p>
+            <p>- Graphic design for promotional posts, branding, and marketing</p>
+            <p>- Tools: Adobe Photoshop, Canva, etc.</p>
+        </div>
+
+        <div id="design" class="skill-details">
+            <img src="images/graphic-design.jpg" alt="">
+            <p>- Promoted products on TikTok with engaging video content</p>
+          <p>- Designed and edited promotional and marketing videos</p>
+          <p>- Video creation aimed at boosting visibility and sales</p>
+        </div>
+
+        <div id="video" class="skill-details">
+            <img src="images/video-editing.jpg" alt="">
+            <p>
+              - Sold digital products and freelance creative services (graphic
+              design, video editing)
+            </p>
+            <p>- Customed content creation for clients or business promotion</p>
+            <p>- Emphasize your entrepreneurial skills</p>
+        </div>
+</section>
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>www.RoldanPortfolio.com</p>
+      </div>
+    </footer>
+
+     <script>
+      
+      function toggleSkill(skillId) {
+          const skillDetails = document.getElementById(skillId);
+          const allSkills = document.querySelectorAll('.skill-details');
+
+        
+          allSkills.forEach(skill => skill.style.display = 'none');
+
+          
+          if (skillDetails.style.display === 'none' || skillDetails.style.display === '') {
+              skillDetails.style.display = 'block';
+          } else {
+              skillDetails.style.display = 'none';
+          }
+      }
+  </script>
+  </body>
+</html>
